@@ -21,6 +21,9 @@ References
 ----------
 • Fox, Laurent, Passalacqua (2023): GQMOM on R+ (Stieltjes–Wigert)
 • Lage (2011); Yuan et al. (2012): moment transport + boundary terms
+• Baroody, H. (2018). Dynamic modelling of platinum degradation in polymer electrolyte fuel cells.
+  PhD Thesis, Simon Fraser University. https://summit.sfu.ca/item/18647
+  — MSAC initial PRD treated as log-normal; we use μ = 0.612 and σ = 0.460 to set M0..M4.
 """
 
 from __future__ import annotations
@@ -31,7 +34,13 @@ from scipy.integrate import solve_ivp
 # ===================== User inputs & constants =====================
 
 # Initial raw moments (M0..M4)
+# Initial raw moments (M0..M4) are set from the MSAC log-normal PRD parameters
+# (μ = 0.612, σ = 0.460) reported in:
+# Baroody, H. (2018). Dynamic modelling of platinum degradation in polymer
+# electrolyte fuel cells. PhD Thesis, Simon Fraser University. https://summit.sfu.ca/item/18647
+
 M_init = [1.0, 2.0499, 5.1924, 16.2517, 62.8531]
+
 
 # Electrolyte: initial dissolved Pt (mol m^-3)
 CPT0 = 0.0
