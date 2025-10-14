@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Lognormal–GQMOM Pt Ostwald-Ripening (OR) — SIMPLE SCRIPT
+Lognormal–GQMOM Pt Ostwald-Ripening (OR)
 ========================================================
 
 
