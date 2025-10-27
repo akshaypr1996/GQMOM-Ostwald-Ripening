@@ -92,7 +92,7 @@ smallZeta = 1.0e-14
 # AP: Flag to enable or disable printing debug information in GQMOM
 debugGQMOM = True   # debug prints for GQMOM inversion
 
-R_MIN = 0.5         # nm
+R_MIN = 1         # nm
 R_MAX = 10.0        # nm (for plotting)
 
 # Time integration
